@@ -1,0 +1,243 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    height:100vh;
+}
+body{
+    height: 100vh;
+    color: rgba(0, 0, 0,0.8);
+}
+.profile-card > img{
+    width:400px;
+    height: 410px;
+    object-fit: cover;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+   
+}
+.section1{
+    position: relative;
+}
+.profile-card{
+    position: relative;
+}
+
+.shape{
+    width: 100vw;
+    height:600px;
+    border-left:1000px solid rgb(86, 86, 183);
+    border-top: 400px solid rgb(86, 86, 183);
+    border-bottom : 200px solid white;
+    border-right : 1600px solid white;
+}
+.name-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 60px;
+    color:white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 3);
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.section1 .profile{
+display: flex;
+margin:30px 30px 30px 30px;
+align-items: center;
+justify-content: center;
+position:absolute;
+    top: 50px;
+    left: 200px;
+}
+.info-card{
+    width: 600px;
+    height:360px;
+    padding: 25px;
+    display: grid;
+    grid-template-rows: 4fr 1fr;
+    font-size:20px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.info-card h1{
+    padding-bottom: 15px;   
+}
+.section1 .icons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap:20px;
+    font-size: 30px;
+}
+.section2, .screenshot{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.work{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    margin:20px;
+    gap: 20px;
+}
+.project{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    display: grid;
+    height: 290px;
+    width: 270px;
+    grid-template-rows: 3fr 2fr;
+}
+.upper-project-part{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    padding: 10px;
+}
+.section2 .icons{
+    font-size: 22px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap:10px;
+}
+.section2{
+    padding-bottom: 40px;
+}
+.work .description{
+    padding:10px;
+}
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    justify-items: flex-end;
+    padding:60px 80px;
+    background-color: rgb(86, 86, 183);
+    color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.banner img{
+    width: 600px;
+    height: 400px;   
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    font-size: 20px;
+    max-width: 500px;
+    align-items: flex-start;
+}
+.contact .icons{
+    font-size: 40px;
+    gap: 20px;
+    display: flex;
+}
+.screenshot{
+    background-color: rgb(86, 86, 183);
+    color: white;
+}
+.contact{
+    justify-self: flex-start;
+}
+
+@media(max-width:450px){
+    .section1 .profile{
+        flex-direction: column;
+        top:0;
+        left: 0;
+        padding:10px;
+        margin: 10px;
+        align-items: flex-start;
+        position: static;
+    }
+    .profile-card > img{
+        width:390px;
+        height: 600px;
+        object-fit: cover;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+       /* display: none; */
+    }
+    .profile-card{
+        position: absolute;
+        top: 20px;
+    }
+    .work{
+        width: 100vw;
+        grid-template-columns: 1fr;
+        gap: 40px;
+      padding-left: 15px;
+    }
+    .shape{
+    height:700px;
+    border: 0;
+    width: 100vw;
+    border-left:430px solid rgb(86, 86, 183);
+    border-top: 480px solid rgb(86, 86, 183);
+    border-bottom : 220px solid white;
+    } 
+    .info-card{
+       width: 400px;
+       height: 700px;
+       box-shadow: 0 0 0 0;
+       position: static;
+       text-align: center;
+       font-size: 30px;
+       word-wrap: break-word;
+    }
+    .section1 .icons{
+        font-size: 50px;
+        justify-content: center;
+    }
+    .section2-heading{
+        font-size: 30px;
+    }
+    .project{
+        width: 400px;
+        height:600px;
+        font-size: 27px;
+    }
+    .screenshot{
+        font-size: 60px;
+        text-align: center;
+    }
+    .upper-project-part, .upper-project-part .icons{
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .section3{
+        grid-template-columns: 1fr;
+        padding: 0;
+        width:430px
+    }
+    .banner img{
+        width:430px;
+        padding:0;
+        margin: 0;
+    }
+    .contact{
+        padding:10px;
+       
+    }
+    .contact-info h1{
+        margin: 0 auto;
+    }
+    .contact .icons{
+        font-size: 40px;
+        gap: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
